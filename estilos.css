@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Ultra&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Elms Sans";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    /* Colores */
+    --blanco: white;
+    --negro80op: #00000060;
+    --negro100op: black;
+
+    /* Border radius */
+    --border1: 4px;
+    --border2: 20px;
+}
+
+header{
+    min-height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+header img{
+    width: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 12px;
+    background-color: var(--negro80op);
+    border-radius: var(--border2);
+}
+
+h1{
+    font-family: "Ultra";
+    color: var(--blanco);
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+h2{
+    color: var(--blanco);
+}
+
+.TEXTOPORTADA{
+    min-height: 80vh;
+    align-content: center;
+}
+
+#portada{
+    min-height: 80vh;
+    background-image: url(img/fondo\ header.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#fondonegro{ 
+    max-width: 700px;
+    margin: auto;
+    background-color: var(--negro80op);
+    padding: 50px;
+    border-radius: var(--border1);
+}
+
+/* Hover */
+nav a:hover {
+    background-color: var(--negro100op);
+    border-radius: var(--border2);
+}
+
+/* MOBILE */
+@media all and (min-width:300px){
+    header{
+        flex-direction: column;
+        background-position: center bottom 20%;
+    }
+    
+    header img{
+        margin-top: 20px;
+    }
+
+
+    h2{
+        font-size: 1em;
+    }
+
+    .TEXTOPORTADA{
+        min-height: 40vh;
+        margin: 0 20px;
+    }
+
+    #fondonegro{
+        padding: 30px;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:768px){
+    h1{
+        font-size: 2em;
+    }
+
+    header{
+        flex-direction: row;
+        padding: 0 40px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin: 0 15px;
+    }
+
+    nav a{
+        margin: 5px;
+    }
+    
+}
