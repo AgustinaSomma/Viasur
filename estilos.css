@@ -32,6 +32,7 @@ header{
 
 header img{
     width: 100px;
+    margin-bottom: 10px;
 }
 
 nav a{
@@ -67,7 +68,7 @@ h2{
 }
 
 #fondonegro{ 
-    max-width: 700px;
+    max-width:700px;
     margin: auto;
     background-color: var(--negro80op);
     padding: 50px;
@@ -112,6 +113,10 @@ nav a:hover {
         font-size: 2em;
     }
 
+    h2{
+        font-size: 1.2em;
+    }
+
     header{
         flex-direction: row;
         padding: 0 40px;
@@ -127,4 +132,16 @@ nav a:hover {
         margin: 5px;
     }
     
+}
+
+/* DESKTOP */
+@media all and (min-width: 1024px){
+    h1{
+        font-size: 2.5em;
+    }
+
+
+    #fondonegro{
+        max-width: 900px;
+    }
 }
