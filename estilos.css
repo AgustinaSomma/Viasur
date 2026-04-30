@@ -14,7 +14,7 @@ html{
 :root{
     /* Colores */
     --blanco: white;
-    --negro80op: #00000060;
+    --negro50op: #00000050;
     --negro100op: black;
 
     /* Border radius */
@@ -39,7 +39,7 @@ nav a{
     text-decoration: none;
     color: white;
     padding: 7px 12px;
-    background-color: var(--negro80op);
+    background-color: var(--negro50op);
     border-radius: var(--border2);
 }
 
@@ -70,7 +70,7 @@ h2{
 #fondonegro{ 
     max-width:700px;
     margin: auto;
-    background-color: var(--negro80op);
+    background-color: var(--negro50op);
     padding: 50px;
     border-radius: var(--border1);
 }
