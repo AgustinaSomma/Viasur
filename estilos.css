@@ -16,6 +16,9 @@ html{
     --blanco: white;
     --negro50op: #00000050;
     --negro100op: black;
+    --naranjacla: rgb(253, 229, 210);
+    --naranja: rgb(235, 148, 76);
+    --naranjaosc: rgb(151, 44, 1);
 
     /* Border radius */
     --border1: 4px;
@@ -43,20 +46,68 @@ nav a{
     border-radius: var(--border2);
 }
 
+article a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 12px;
+    background-color: var(--negro50op);
+    border-radius: var(--border2);
+}
+
 h1{
     font-family: "Ultra";
-    color: var(--blanco);
+    color: var(--naranjacla);
     font-weight: 300;
     font-size: 1.5em;
 }
 
 h2{
     color: var(--blanco);
+    width: 100%;
+    text-align: center;
+}
+
+h3{
+    color: var(--naranjaosc);
+    font-size: 1.7em;
+    font-family: "Ultra";
+    font-weight: 100;
+    text-align: center;
+    padding: 30px 0 20px 0;
+}
+
+h4{
+    color: var(--naranjacla);
+    font-size: 1.5em;
+}
+
+
+P{
+    color: var(--naranjaosc);
+    padding: 15px 0 25px 0;
+}
+
+article{
+    background-color: var(--naranja);
+    border-radius: var(--border1);
+    max-width: 700px;
+    padding: 20px;
 }
 
 .TEXTOPORTADA{
     min-height: 80vh;
     align-content: center;
+}
+
+#main{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fondomain{
+    background-color: var(--naranjacla);
 }
 
 #portada{
@@ -81,6 +132,14 @@ nav a:hover {
     border-radius: var(--border2);
 }
 
+article:hover{
+    background-color: var(--negro50op);
+}
+
+p:hover{
+    color: var(--blanco);
+}
+
 /* MOBILE */
 @media all and (min-width:300px){
     header{
@@ -91,7 +150,6 @@ nav a:hover {
     header img{
         margin-top: 20px;
     }
-
 
     h2{
         font-size: 1em;
@@ -104,6 +162,14 @@ nav a:hover {
 
     #fondonegro{
         padding: 30px;
+    }
+
+    article{
+        margin: 0 20px;
+    }
+
+    #main{
+    gap: 1.5em;
     }
 }
 
@@ -140,8 +206,20 @@ nav a:hover {
         font-size: 2.5em;
     }
 
-
     #fondonegro{
         max-width: 900px;
+    }
+    
+    article{
+    min-height: 150px;
+    max-height: 300px;
+    margin: 0;
+    }
+
+    #main{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 0 50px 30px 50px;
     }
 }
